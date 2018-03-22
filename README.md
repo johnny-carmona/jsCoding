@@ -12,7 +12,6 @@ on a terminal type:
 ```javascript
     npm install
 ```
-please intall nodeJs and run npm install
 
 ## Usage:
 
