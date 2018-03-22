@@ -1,2 +1,2 @@
 # jsCoding
-repository for js coding tes
+repository for js coding test
