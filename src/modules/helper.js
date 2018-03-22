@@ -6,8 +6,8 @@
     @returns none
 */
 export function iterate(collection, funcType, callback) {
-    const checkFunc = (value, key, _collection) => {
-        let re = callback(value, key, _collection)        
+    const checkFunc = (...args) => {
+        let re = callback.apply(null, args)        
         if (typeof re !== 'undefined' && !re) {            
             return false
         }

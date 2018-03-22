@@ -77,12 +77,16 @@ console.log(new_array);//returns new mapped collection
 console.log('\x1b[32m', '\r\nthis section showcases the reduce function\r\n');
 //using an Array
 console.log('\x1b[0m', 'using an array');
+console.log('\r\ncollection')
+console.log([1, 2, 3]);
 let total = reduce([1, 2, 3], function(sum, n) {
     return sum + n;
   }, 0);
 console.log(`Total: ${total}`);//return total
 //using an object
 console.log('\r\nusing an object');
+console.log('\r\ncollection')
+console.log({ 'a': 1, 'b': 2, 'c': 1 });
 total = reduce({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
     (result[value] || (result[value] = [])).push(key);
     return result;
