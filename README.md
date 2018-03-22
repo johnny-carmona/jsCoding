@@ -1,11 +1,24 @@
 # jsCoding
 repository for js coding test
 
-## installation:
+## Requirements:
 
+node.js should be installed on the system
+
+## Installation:
+
+on a terminal type:
+
+```javascript
+    npm install
+```
 please intall nodeJs and run npm install
 
-##Usage:
+## Usage:
 
-- on a terminal run npm run build
-- run node ./build/index.js
+```javascript
+    npm run build
+    node ./build/index.js
+```
+
+
