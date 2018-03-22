@@ -9,13 +9,13 @@ node.js should be installed on the system
 
 on a terminal type:
 
-```javascript
+```console
     npm install
 ```
 
 ## Usage:
 
-```javascript
+```console
     npm run build
     npm start
 ```
