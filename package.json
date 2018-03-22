@@ -4,7 +4,7 @@
   "description": "coding test, decided to use node and babel to transpile the code",
   "main": "index.js",
   "scripts": {
-    "start": "",
+    "start": "node ./build/index.js",
     "buildWatch": "babel --presets es2015 src -w -d build",
     "build": "babel --presets es2015 src -d build",
     "test": "echo \"Error: no test specified\" && exit 1"

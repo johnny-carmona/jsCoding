@@ -18,7 +18,7 @@ please intall nodeJs and run npm install
 
 ```javascript
     npm run build
-    node ./build/index.js
+    npm start
 ```
 
 
