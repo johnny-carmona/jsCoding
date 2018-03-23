@@ -1,6 +1,7 @@
 import each from './modules/each';
 import map from './modules/map';
 import reduce from './modules/reduce';
+import memoize from './modules/memoize';
 
 const array = [
     {
@@ -93,3 +94,21 @@ total = reduce({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
   }, {}); 
   console.log('Result:');
   console.log(total);//return result
+
+/* this section showcases the memoize function */
+console.log('\x1b[32m', '\r\nthis section showcases the memoize function\r\n');
+function _factorial(num) {
+    console.log('runnig from func')
+    if(num === 1) { return 1 }
+    return num * factorial(num - 1);
+}
+const factorial = memoize(_factorial);
+console.log('\x1b[0m', '\r\nRuns factorial function')
+console.log(factorial(3));
+console.log('\r\nUsing cache result')
+console.log(factorial(3));//uses cache result
+console.log('\r\nUses the _factorial func only for the last one')
+console.log(factorial(4));//uses the _factorial func only for the last one
+factorial.cache.set({"0":4}, 100);//chanches the value in cache
+console.log('\r\nCache value has been modified by set cache function');
+console.log(factorial.cache.store)
